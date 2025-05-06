@@ -4800,3 +4800,26 @@ input, select, textarea {
 	  .share-button:hover {
 		background-color: #3367D6;
 	  }
+	  /* #scrollRecord {
+		position: fixed;
+		top: 20px;
+		left: 20px;
+		width: 80px;
+		height: auto;
+		z-index: 1000;
+		pointer-events: none; クリック無効化（リンク重なり防止） */
+		/* transform: rotate(0deg); */
+		/* transition: transform 0.05s linear; */
+	  /* } */
+	  
+	  #rotating-record {
+		position: fixed;
+		top: 40px;
+		left: 40px;
+		width: 8vw;
+		max-width: 80px;
+		z-index: 999;
+		pointer-events: none;
+		transition: transform 0.1s linear;
+	  }
+	  

@@ -255,4 +255,24 @@
 
 		}
 
+		// === 20250506added ===
+
+		// レコード画像をスクロールに応じて回転させる
+		// var $record = $('#rotating-record');
+
+		// if ($record.length > 0) {
+		// 	$window.on('scroll', function () {
+		// 	var rotation = $window.scrollTop() * 0.5;
+		// 	$record.css('transform', 'rotate(' + rotation + 'deg)');
+		// 	});
+		// }
+
 })(jQuery);
+
+document.addEventListener('scroll', function () {
+	var record = document.getElementById('rotating-record');
+	if (record) {
+	  var rotation = window.scrollY * 0.5;
+	  record.style.transform = 'rotate(' + rotation + 'deg)';
+	}
+  });
