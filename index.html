@@ -1,84 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
 <head>
-<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
-<meta name="keywords" content="">
-<meta name="description" content="Riho Return Countdown">
-<title>Riho Return Countdown</title>
-
-<!--CSS-->
-<link rel="stylesheet" href="css/test.css">
-<!-- <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'> -->
-<!--<link href='https://fonts.googleapis.com/css?family=Raleway:400,300,500,600,700' rel='stylesheet' type='text/css'>-->
-<!--/CSS-->
-
-<!--JS-->
-<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>-->
-<!--<script src="js/jquery.plugin.js"></script>-->
-<!--<script src="js/jquery.countdown.js"></script>-->
-<script src="js/test.js"></script>
-<!--<script>-->
-<!--$(function () {-->
-<!--	$('#defaultCountdown').countdown({until: new Date(2023, 8-1, 23), format: 'D'});-->
-<!--	//Replace above date with your own, to find out more visit http://keith-wood.name/countdown.html-->
-<!--});-->
-<!--&lt;!&ndash;$(function () {&ndash;&gt;-->
-<!--&lt;!&ndash;	$('#defaultCountdown').countdown({until: new Date(2022, 12-1, 27, 12, 33), format: 'S'});&ndash;&gt;-->
-<!--&lt;!&ndash;	//Replace above date with your own, to find out more visit http://keith-wood.name/countdown.html&ndash;&gt;-->
-<!--&lt;!&ndash;});&ndash;&gt;-->
-<!--</script>-->
-<!--/JS-->
-
+  <meta charset="UTF-8">
+  <title>Wedding Page</title>
 </head>
-
 <body>
+  <h1>ようこそ</h1>
+  <p id="message">通常メッセージ：このページへようこそ。</p>
 
-
-<div class="container">
-  <div class="balloon white">
-    <div class="star-red"></div>
-  <div class="face">
-    <div class="eye"></div>
-    <div class="mouth happy"></div>
-  </div>
-  <div class="triangle"></div>
-  <div class="string"></div>
-</div>
-
-<div class="balloon red">
-  <div class="star"></div>
-  <div class="face">
-    <div class="eye"></div>
-    <div class="mouth happy"></div>
-  </div>
-  <div class="triangle"></div>
-  <div class="string"></div>
-</div>
-
-<div class="balloon blue">
-<!--  <div class="star"></div>-->
-  <div class="face">
-<!--    <div class="eye"></div>-->
-<!--    <div class="mouth happy"></div>-->
-  </div>
-  <div class="triangle"></div>
-  <div class="string"></div>
-</div>
-  <div id="timer"></div>
-  <h1>WEDDING counter</h1>
-  <h2>The wedding day is coming.<br/>
-      5.18.2025(Sun.)<br/>
-      In TRUNK HOTEL SHIBUYA.<br/>
-      I can't wait anymore...<br/>
-      well well, get to work...<br/><br/>
-      She's doing her best, too.
-　</h2>
-</div>
-<footer>
-<!--  <p>made by <a href="https://codepen.io/juliepark"> julie</a> ♡-->
-<p class="copyright">Designed by <a href="https://riho-takuya.github.io/" target="_blank">Einstein</a></p>
-</footer>
-
-
+  <!-- ✅ スクリプトはこの位置（</body>の直前）に入れる -->
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    if (params.get("from") === "nfc") {
+      document.getElementById("message").innerText =
+        "Here is our master`s voice!";
+    }
+  </script>
 </body>
 </html>
