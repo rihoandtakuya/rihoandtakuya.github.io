@@ -262,7 +262,14 @@
 document.addEventListener('scroll', function () {
 	var record = document.getElementById('rotating-record');
 	if (record) {
-	  var rotation = window.scrollY * 0.5;
-	  record.style.transform = 'rotate(' + rotation + 'deg)';
+		const scrollY = window.scrollY;
+		const rotation = scrollY * 0.5;
+		record.style.transform = `rotate(${rotation}deg)`;
+  
+		// スクロール量に応じてopacity調整（最大100pxまで）
+		const maxScroll = 1000;
+		const opacity = Math.min(scrollY / maxScroll, 1);
+		record.style.opacity = opacity;
+	
 	}
   });
