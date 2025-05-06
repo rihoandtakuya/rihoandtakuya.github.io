@@ -4731,24 +4731,25 @@ input, select, textarea {
 	  } */
 	  .link-card-inner {
 		display: flex;
-		align-items: center; /* ← これが縦中央揃え */
+		align-items: stretch; /* ← 高さを揃えるため stretch にする */
 	  }
 	  
 	  .link-card-inner img {
-		width: 80px; /* 適宜サイズ調整 */
+		width: 80px;
 		height: auto;
 		object-fit: contain;
 	  }
 	  
 	  .link-card-inner .text-content {
+		flex: 1;                          /* 残り全体を使う */
 		display: flex;
-        flex-direction: column;
-  		justify-content: center; /* ← ← ← これで縦方向中央に */
-  		flex: 1;                 /* ← ← ← 残りスペースを使う */
+		flex-direction: column;
+		justify-content: center;          /* 縦中央 */
+		align-items: center;              /* 横中央 */
 		padding: 1em;
-		text-align: center; 
+		text-align: center;
 	  }
-
+	  
 	  .link-card img {
 		width: 160px;
 		height: auto;
@@ -4761,13 +4762,13 @@ input, select, textarea {
 	  
 	  .link-card h3 {
 		margin: 0 0 0.3em;
-		font-size: 1.1em;
+		font-size: 1.5em;
 		color: #333;
 	  }
 	  
 	  .link-card p {
 		margin: 0;
-		font-size: 0.9em;
+		font-size: 1.1em;
 		color: #666;
 		text-align: center;
 	  }
