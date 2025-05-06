@@ -1,5 +1,6 @@
 const year = 2025;
-const fourthOfJuly = new Date(year, 5, 18).getTime();
+// month: counted from 0
+const fourthOfJuly = new Date(year, 4, 18).getTime();
 //const fourthOfJulyNextYear = new Date(year + 1, 7, 23   ).getTime();
 const month = new Date().getMonth();
 
