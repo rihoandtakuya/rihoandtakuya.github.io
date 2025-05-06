@@ -4707,72 +4707,91 @@ input, select, textarea {
 		height: 100%;
 		border: 0;
 	  }
-
 	  .link-card {
 		display: block;
-		max-width: 640px;
+		max-width: 480px;
 		margin: 2em auto;
 		text-decoration: none;
-		border: 1px solid #ccc;
-		border-radius: 12px;
+		border: 1px solid #ddd;
+		border-radius: 16px;
 		overflow: hidden;
 		transition: box-shadow 0.3s ease;
 		background: #fff;
+		box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
 	  }
 	  
 	  .link-card:hover {
-		box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+		box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
 	  }
 	  
-	  /* .link-card-inner {
-		display: flex;
-		flex-direction: row;
-		align-items: center;
-	  } */
 	  .link-card-inner {
 		display: flex;
-		align-items: stretch; /* ← 高さを揃えるため stretch にする */
+		align-items: center;
+		padding: 1.5em;
+		gap: 24px;
 	  }
 	  
 	  .link-card-inner img {
-		width: 80px;
-		height: auto;
-		object-fit: contain;
+		width: 100px;
+		height: 100px;
+		object-fit: cover;
+		border-radius: 12px;
+		flex-shrink: 0;
 	  }
 	  
 	  .link-card-inner .text-content {
-		flex: 1;                          /* 残り全体を使う */
+		flex: 1;
 		display: flex;
 		flex-direction: column;
-		justify-content: center;          /* 縦中央 */
-		align-items: center;              /* 横中央 */
-		padding: 1em;
+		justify-content: center;
+		text-align: left;
+	  }
+	  
+	  .link-card-inner h3 {
+		margin: 0 0 0.3em;
+		font-size: 1.3em;
+		font-weight: 700;
+		color: #222;
+	  }
+	  
+	  .link-card-inner p {
+		margin: 0;
+		font-size: 1em;
+		color: #666;
+		line-height: 1.5;
 		text-align: center;
 	  }
 	  
-	  .link-card img {
-		width: 160px;
-		height: auto;
-		object-fit: cover;
+	  section.link-card-group {
+		margin: 4em 0;
+		padding: 0 1em;
 	  }
 	  
-	  .link-card div {
-		padding: 1em;
+	  .photo-share {
+		margin: 2em auto;
+		text-align: center;
+		padding: 2em;
 	  }
 	  
-	  .link-card h3 {
-		margin: 0 0 0.3em;
-		font-size: 1.5em;
-		color: #333;
-	  }
-	  
-	  .link-card p {
+	  .photo-share p {
 		margin: 0;
 		font-size: 1.1em;
 		color: #666;
 		text-align: center;
 	  }
 	  
-	  section.link-card-group {
-		margin: 4em 0; /* 上下に4emの余白、左右はゼロ */
+	  .share-button {
+		display: inline-block;
+		padding: 1em 2em;
+		background-color: #1e252d;
+		color: #fff;
+		font-weight: bold;
+		border-radius: 8px;
+		text-decoration: none;
+		margin-top: 1em;
+		transition: background-color 0.2s ease;
+	  }
+	  
+	  .share-button:hover {
+		background-color: #3367D6;
 	  }
