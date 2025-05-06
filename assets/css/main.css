@@ -4814,10 +4814,10 @@ input, select, textarea {
 	  
 	  #rotating-record {
 		position: fixed;
-		top: 40px;
-		left: 40px;
-		width: 8vw;
-		max-width: 80px;
+		top: 40px; /* お好みで調整 */
+        left: calc(50% - 30rem); /* ← main の左端にピッタリは50%-36rem */
+		width: 10vw;
+		max-width: 120px;
 		z-index: 999;
 		pointer-events: none;
 		transition: transform 0.1s linear;
