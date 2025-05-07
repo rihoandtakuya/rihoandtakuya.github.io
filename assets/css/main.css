@@ -4818,8 +4818,8 @@ input, select, textarea {
 		/* top: 1rem; */
 		/* left: calc(50% - 35rem); */
 		left: max(3rem, 50% - 35rem);
-		width: 100px; /* vwではなくpx指定の方が正確です */
-		height: 100px; /* 正方形であることを前提に調整 */
+		width: 200px; /* vwではなくpx指定の方が正確です */
+		height: 200px; /* 正方形であることを前提に調整 */
 		z-index: 999;
 		pointer-events: none;
 		opacity: 0;
