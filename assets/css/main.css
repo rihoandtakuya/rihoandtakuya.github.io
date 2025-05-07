@@ -4814,7 +4814,8 @@ input, select, textarea {
 	  
 	  #rotating-record {
 		position: fixed;
-		top: 1rem;
+		bottom: 1rem;
+		/* top: 1rem; */
 		/* left: calc(50% - 35rem); */
 		left: max(3rem, 50% - 35rem);
 		width: 100px; /* vwではなくpx指定の方が正確です */
