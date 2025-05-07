@@ -264,7 +264,7 @@ document.addEventListener('scroll', function () {
 	if (record) {
 		const scrollY = window.scrollY;
 		const rotation = scrollY * 0.5;
-		record.style.transform = `translate(-50%, -50%) rotate(${rotation}deg)`;
+		record.style.transform = `translate(-50%) rotate(${rotation}deg)`;
   
 		// スクロール量に応じてopacity調整（最大100pxまで）
 		const maxScroll = 1000;

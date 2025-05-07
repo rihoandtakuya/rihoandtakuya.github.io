@@ -4814,17 +4814,17 @@ input, select, textarea {
 	  
 	  #rotating-record {
 		position: fixed;
-		bottom: 1rem;
+		bottom: -2rem;
 		/* top: 1rem; */
 		/* left: calc(50% - 35rem); */
-		left: max(3rem, 50% - 35rem);
-		width: 200px; /* vwではなくpx指定の方が正確です */
-		height: 200px; /* 正方形であることを前提に調整 */
+		left: max(3rem, 50% - 34rem);
+		width: 150px; /* vwではなくpx指定の方が正確です */
+		height: 150px; /* 正方形であることを前提に調整 */
 		z-index: 999;
 		pointer-events: none;
 		opacity: 0;
 		transition: transform 0.1s linear, opacity 0.3s ease-out;
 	  
 		transform-origin: center center;
-		transform: translate(-50%, -50%) rotate(0deg);
+		transform: translate(-50%) rotate(0deg);
 	  }
